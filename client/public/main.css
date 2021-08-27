@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  user-select: none;
+  background-color: rgb(64, 64, 64);
+  align-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-events {
+  max-width: 800px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game-items {
+  width: 100%;
+  max-width: 1024px;
+  min-width: 600px;
+  background-color: white;
+}
+
+.game-item {
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  border: solid 2px gray;
+}
+
+.property {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.property > .key {
+  font-weight: bold;
+}

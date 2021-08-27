@@ -1,0 +1,17 @@
+---
+version: '3'
+
+services:
+  example-websocket-node-server:
+    image: node:14-slim
+    restart: always
+    environment:
+      - PORT=8080
+    working_dir: /opt/services/example-websocket-node-server
+    volumes:
+      - ../server/:/opt/services/example-websocket-node-server
+      - ../client/dist/:/opt/services/example-websocket-node-server/public
+    command: npm run start
+    ports:
+      - 8080:8080
+

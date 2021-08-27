@@ -1,0 +1,32 @@
+{
+  "name": "example-websocket-node-client",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build:ts": "webpack --config webpack.ts.ts --mode=production --env production --progress",
+    "build:tsx": "webpack --config webpack.tsx.ts --mode=production --env production --progress",
+    "build": "npm run build:tsx",
+    "clean": "rm -rf node_modules/ dist/ package-lock.json",
+    "clean:build": "npm run clean && npm run build",
+    "clear": "rm -rf dist/",
+    "dist:style": "cp public/main.css dist/",
+    "serve": "http-server dist/"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.9",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "http-server": "^13.0.0",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.4.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
